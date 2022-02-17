@@ -11,4 +11,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="playlistbtn">Button</string>
     <string name="artist">TextView</string>
+    <string name="home">home</string>
+    <string name="lyrics">lyrics:</string>
+    <string name="todo">TODO</string>
 </resources>

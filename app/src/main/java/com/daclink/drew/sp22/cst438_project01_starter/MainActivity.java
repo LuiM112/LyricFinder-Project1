@@ -20,6 +20,7 @@ import com.daclink.drew.sp22.cst438_project01_starter.databinding.ActivityMainBi
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -34,10 +35,23 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
+//    private RecyclerView recyclerView;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        setContentView(R.layout.activity_main);
+
+//        recyclerView = findViewById(R.id.recyclerview);
+//        recyclerView.setHasFixedSize(true);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -55,41 +69,33 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://developer.musixmatch.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        ResultsInterface resultsInterface = retrofit.create(ResultsInterface.class);
-
-        Call<List<ResultsPage>> call = resultsInterface.getResults();
-
-        call.enqueue(new Callback<List<ResultsPage>>() {
-            @Override
-            public void onResponse(Call<List<ResultsPage>> call, Response<List<ResultsPage>> response) {
-
-                if (response.code() != 200){
-                    // handle the error & display it
-                    return;
-                }
-               List<ResultsPage> lyrics = response.body();
-
-                for( ResultsPage resultsPage : lyrics ){
-                    String responseTest = "";
-
-//                    responseTest += ResultsPage.getLyrics();
-
-                    Log.v("Tag", "" +responseTest);
-                }
-
-
-            }
-
-            @Override
-            public void onFailure(Call<List<ResultsPage>> call, Throwable t) {
-
-            }
-        });
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("https://developer.musixmatch.com/")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//
+//        ResultsInterface resultsInterface = retrofit.create(ResultsInterface.class);
+//
+//        Call<List<ResultsPage>> call = resultsInterface.getResults();
+//
+//        call.enqueue(new Callback<List<ResultsPage>>() {
+//            @Override
+//            public void onResponse(Call<List<ResultsPage>> call, Response<List<ResultsPage>> response) {
+//                if(!response.isSuccessful()){
+//                    Toast.makeText(MainActivity.this, response.code(), Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                List<ResultsPage> resultsList = response.body();
+//                ResultsAdapter resultsAdapter = new ResultsAdapter(MainActivity.this, resultsList);
+//                recyclerView.setAdapter(resultsAdapter);
+//
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<ResultsPage>> call, Throwable t) {
+//                Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
     @Override
