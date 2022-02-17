@@ -12,8 +12,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentFirstBinding;
-import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentSecondBinding;
+import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentLoginBinding;
 import com.daclink.drew.sp22.cst438_project01_starter.databinding.ResultsPageBinding;
 
 import java.util.List;

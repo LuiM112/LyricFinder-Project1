@@ -9,11 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentFirstBinding;
+import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentRegisterBinding;
 
-public class FirstFragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+public class RegisterFragment extends Fragment {
+
+    private FragmentRegisterBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +22,7 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FragmentRegisterBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,13 +30,14 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                NavHostFragment.findNavController(RegisterFragment.this)
+                        .navigate(R.id.action_RegisterFragment_to_LoginFragment);
             }
         });
+
     }
 
     @Override
