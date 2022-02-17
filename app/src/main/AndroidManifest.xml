@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CST438_Project01_Starter">
         <activity
-            android:name=".MusixMatch"
+
+            android:name="LoginActivity"
+            android:name=".Search"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

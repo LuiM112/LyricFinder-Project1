@@ -116,4 +116,13 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        //Displaying Toast with Hello Javatpoint message
+        Toast.makeText(getApplicationContext(),"Incorrect Username/Password",Toast.LENGTH_SHORT).show();
+    }
 }
