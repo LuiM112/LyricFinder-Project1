@@ -2,4 +2,5 @@
 <resources>
     <item name="action_RegisterFragment_to_LoginFragment" type="id" />
     <item name="action_LoginFragment_to_RegisterFragment" type="id" />
+    <item name="action_ResultFragment_to_SearchFragment" type="id" />
 </resources>

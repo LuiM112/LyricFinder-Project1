@@ -35,8 +35,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private static final String USER_ID_KEY = "com.example.project2onlinestore_marcosmos.userIdKey";
-    private static final String PREFERENCES_KEY = "com.example.project2onlinestore_marcosmos.PREFERENCES_KEY";
+    private static final String USER_ID_KEY = "com.example.daclink.drew.sp22.cst438_project1_starter.userIdKey";
+    private static final String PREFERENCES_KEY = "com.example.daclink.drew.sp22.cst438_project1_starter.PREFERENCES_KEY";
 
     private ActivityMainBinding binding;
 

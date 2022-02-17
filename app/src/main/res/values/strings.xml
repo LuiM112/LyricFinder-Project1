@@ -28,8 +28,7 @@
     <string name="logout">Logout</string>
     <string name="yes">Success</string>
     <string name="no">Fail</string>
-    <string name="register">register</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="register">Register</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="intro">The button below shows how to link to song lyrics from within the app.\n
@@ -39,4 +38,9 @@
     </string>
     <string name="show_lyrics">Press the button below to show the lyrics for the song &quot;Let it be&quot; by The Beatles</string>
     <string name="load_lyrics">View the Lyrics</string>
+    <string name="hintText">Enter some lyrics</string>
+    <string name="headerText">Lyric Searcher</string>
+    <string name="searchText">Search</string>
+    <string name="playlistbtn">Button</string>
+    <string name="artist">TextView</string>
 </resources>
