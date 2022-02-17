@@ -36,21 +36,17 @@
         android:label="Lyric Finder"
         tools:layout="@layout/fragment_search">
 
-
         <action
-            android:id="@+id/action_SearchFragment_to_ResultFragment"
-            app:destination="@+id/ResultFragment" />
+            android:id="@+id/action_SearchFragment_to_ResultPage"
+            app:destination="@+id/ResultPage" />
 
     </fragment>
 
     <fragment
-        android:id="@+id/ResultFragment"
+        android:id="@+id/ResultPage"
         android:name="com.daclink.drew.sp22.cst438_project01_starter.ResultsPage"
         android:label="Result Fragment"
         tools:layout="@layout/results_page">
-        <action
-            android:id="@+id/action_ResultFragment_to_SearchFragment"
-            app:destination="@+id/SearchFragment"/>
     </fragment>
 
 

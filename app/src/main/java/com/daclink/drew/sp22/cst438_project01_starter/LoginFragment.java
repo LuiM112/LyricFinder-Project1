@@ -104,6 +104,14 @@ public class LoginFragment extends Fragment {
                         .navigate(R.id.action_LoginFragment_to_RegisterFragment);
             }
         });
+
+        binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_loginFragment_to_SearchFragment);
+            }
+        });
     }
 
     @Override

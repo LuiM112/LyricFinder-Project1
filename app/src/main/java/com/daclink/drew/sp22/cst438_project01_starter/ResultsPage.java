@@ -35,22 +35,7 @@ public class ResultsPage extends Fragment {
         return binding.getRoot();
     }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonResult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(ResultsPage.this)
-                        .navigate(R.id.action_ResultFragment_to_SearchFragment);
-            }
-        });
-    }
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 
 
 }
