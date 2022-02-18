@@ -60,15 +60,15 @@ public class SearchFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        artist_text = view.findViewById(R.id.artist_name);
+        song_text = view.findViewById(R.id.song_name);
 
         binding.searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                artist_text = artist_text.findViewById(R.id.artist_name);
                 artistString = artist_text.getText().toString();
                 Log.e(TAG, "onCreate: String" + artistString);
-                song_text = song_text.findViewById(R.id.song_name);
                 songString = song_text.getText().toString();
                 Log.e(TAG, "onCreate: String" + songString);
                 apiKey = key.getKey();
