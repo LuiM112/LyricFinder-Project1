@@ -8,9 +8,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="117dp"
-        android:layout_height="22dp"
-        android:text="@string/artist"
+        android:layout_width="169dp"
+        android:layout_height="121dp"
+        android:text="Lyrics Goes Here :D"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

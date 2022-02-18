@@ -43,8 +43,9 @@
     <string name="searchText">Search</string>
     <string name="playlistbtn">Button</string>
     <string name="artist">TextView</string>
-    <string name="artist_name">artistHint</string>
+    <string name="artist_name">Enter an Artist</string>
     <string name="song_name">Enter Song Name</string>
     <string name="search">Search</string>
     <string name="textview">Lyrics Go Here</string>
+    <string name="searchTitle">Lyric Finder</string>
 </resources>

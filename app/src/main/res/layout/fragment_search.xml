@@ -11,17 +11,17 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="146dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
         android:hint="@string/artist_name"
-        android:minHeight="48dp"
         android:inputType="text"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/song_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="">
+        app:layout_constraintTop_toTopOf="parent">
 
     </EditText>
 
@@ -30,18 +30,18 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="9dp"
-        android:minHeight="48dp"
+        android:layout_marginBottom="22dp"
+        android:autofillHints=""
         android:hint="@string/song_name"
         android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/search_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/artist_name"
-        android:autofillHints="">
+        app:layout_constraintTop_toBottomOf="@+id/artist_name">
 
     </EditText>
 
@@ -56,8 +56,25 @@
         android:text="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/song_name" />
+        app:layout_constraintTop_toBottomOf="@+id/song_name"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/searchTitle"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/artist_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
