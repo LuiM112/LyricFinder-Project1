@@ -13,10 +13,10 @@
 
         <action
             android:id="@+id/action_LoginFragment_to_RegisterFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/RegisterFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/RegisterFragment"
         android:name="com.daclink.drew.sp22.cst438_project01_starter.RegisterFragment"
         android:label="@string/register"
         tools:layout="@layout/fragment_register">
