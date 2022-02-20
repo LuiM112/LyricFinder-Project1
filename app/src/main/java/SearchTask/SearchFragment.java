@@ -7,8 +7,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
+import com.daclink.drew.sp22.cst438_project01_starter.LoginFragment;
 import com.daclink.drew.sp22.cst438_project01_starter.R;
 import com.daclink.drew.sp22.cst438_project01_starter.databinding.FragmentSearchBinding;
 
@@ -40,6 +43,18 @@ public class SearchFragment extends Fragment {
 
     private void getInfoLyrics(){
         lyrics = searched.getText().toString();
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        binding.searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(SearchFragment.this)
+                        .navigate(R.id.action_LoginFragment_to_RegisterFragment);
+            }
+        });
     }
 
 }
