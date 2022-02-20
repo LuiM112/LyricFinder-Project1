@@ -39,4 +39,10 @@
     </string>
     <string name="show_lyrics">Press the button below to show the lyrics for the song &quot;Let it be&quot; by The Beatles</string>
     <string name="load_lyrics">View the Lyrics</string>
+
+    <string-array name="options">
+        <item>Menu</item>
+        <item>search history</item>
+        <item>clear history</item>
+    </string-array>
 </resources>
