@@ -48,4 +48,11 @@
     <string name="search">Search</string>
     <string name="textview">Lyrics Go Here</string>
     <string name="searchTitle">Lyric Finder</string>
+
+    <string-array name="options">
+        <item>Menu</item>
+        <item>search history</item>
+        <item>clear history</item>
+    </string-array>
+
 </resources>
